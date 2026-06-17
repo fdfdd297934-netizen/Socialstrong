@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialStrong Marketing - Premium Digital Marketing Agency</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">SocialStrong</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Transform Your Brand into a <span class="highlight">Digital Success</span></h1>
+            <p class="hero-subtitle">Strategic Digital Marketing Solutions That Drive Real Results</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">Start Your Journey</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('services')">Explore Services</button>
+            </div>
+            <div class="hero-extra">
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500%</div>
+                        <div class="stat-label">Avg. Growth</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                </div>
+
+                <ul class="hero-feature-list">
+                    <li class="feature-item">🚀 Website & App Development</li>
+                    <li class="feature-item">🎨 UI/UX & Branding</li>
+                    <li class="feature-item">📈 Digital Marketing & SEO</li>
+                </ul>
+
+                <div class="hero-small-testimonial">“They redesigned our funnel and doubled conversions in 3 months.” — <strong>Rina S.</strong></div>
+                <form class="hero-enquiry" onsubmit="handleHeroEnquiry(event)">
+                    <input type="text" id="hero-name" placeholder="Your name" required>
+                    <input type="email" id="hero-email" placeholder="Email address" required>
+                    <button type="submit" class="btn btn-primary small">Get Free 15‑min Audit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Image Carousel -->
+        <div class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <div class="carousel-image carousel-image-1">📊</div>
+                    <p class="carousel-label">Analytics</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image carousel-image-2">📱</div>
+                    <p class="carousel-label">Social Media</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image carousel-image-3">🎯</div>
+                    <p class="carousel-label">Targeting</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image carousel-image-4">🚀</div>
+                    <p class="carousel-label">Growth</p>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-image carousel-image-5">💡</div>
+                    <p class="carousel-label">Strategy</p>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">SocialStrong</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>We're Your Digital Marketing Partners</h3>
+                    <p>SocialStrong Marketing is a premium digital marketing agency dedicated to transforming businesses through strategic, data-driven campaigns. With over a decade of experience, we've helped 150+ companies achieve exponential growth.</p>
+                    <p>Our team of experts specializes in creating comprehensive digital strategies that encompass social media, SEO, content marketing, and paid advertising—all designed to maximize your ROI.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Data-Driven Strategies</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Proven Results</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <span>Custom Solutions</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">500%</div>
+                        <div class="stat-label">Avg. Growth</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🌐</div>
+                    <h3>Website Development</h3>
+                    <p>Custom websites, e-commerce platforms, and landing pages built for performance and conversion.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>App Development</h3>
+                    <p>Mobile and web apps with scalable architectures, native and cross-platform solutions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design, prototyping, and usability testing to boost engagement and conversions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🖼️</div>
+                    <h3>Branding & Graphic Design</h3>
+                    <p>Logo design, visual identity, and marketing collateral that communicates your brand story.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Business Dashboard</h3>
+                    <p>Custom dashboards and reporting tools to visualize key metrics and drive data-driven decisions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Digital Marketing & SEO</h3>
+                    <p>Full-funnel digital strategies including SEO, content, PPC and social to grow your online presence.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>Business Automation</h3>
+                    <p>Automate workflows, CRM integrations, and marketing funnels to save time and scale operations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h3>Video Editing & Content Creation</h3>
+                    <p>High-quality video production, editing, and content strategy for social and paid channels.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>IT Consulting</h3>
+                    <p>Technical strategy, cloud migration, and IT advisory services to align tech with business goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Portfolio</span></h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image"></div>
+                    <div class="portfolio-info">
+                        <h3>E-Commerce Growth Campaign</h3>
+                        <p class="portfolio-category">Social Media & PPC</p>
+                        <p class="portfolio-result">📈 250% sales increase in 6 months</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image portfolio-image-2"></div>
+                    <div class="portfolio-info">
+                        <h3>B2B Lead Generation</h3>
+                        <p class="portfolio-category">SEO & Content Marketing</p>
+                        <p class="portfolio-result">📈 500+ qualified leads generated</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image portfolio-image-3"></div>
+                    <div class="portfolio-info">
+                        <h3>Startup Brand Launch</h3>
+                        <p class="portfolio-category">Brand Strategy & Social Media</p>
+                        <p class="portfolio-result">📈 100k followers in 8 months</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image portfolio-image-4"></div>
+                    <div class="portfolio-info">
+                        <h3>SaaS Conversion Optimization</h3>
+                        <p class="portfolio-category">Email & Analytics</p>
+                        <p class="portfolio-result">📈 45% conversion rate increase</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image portfolio-image-5"></div>
+                    <div class="portfolio-info">
+                        <h3>Brand Transformation</h3>
+                        <p class="portfolio-category">Branding & Digital Strategy</p>
+                        <p class="portfolio-result">📈 180% engagement boost</p>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <div class="portfolio-image portfolio-image-6"></div>
+                    <div class="portfolio-info">
+                        <h3>Market Expansion</h3>
+                        <p class="portfolio-category">Multi-Channel Marketing</p>
+                        <p class="portfolio-result">📈 Expanded to 3 new markets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our <span class="highlight">Team</span></h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">👨‍💼</div>
+                    <h3>John Smith</h3>
+                    <p class="team-role">Chief Executive Officer</p>
+                    <p class="team-bio">10+ years of digital marketing expertise with a proven track record of scaling businesses.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">👩‍💼</div>
+                    <h3>Sarah Johnson</h3>
+                    <p class="team-role">Head of Social Media</p>
+                    <p class="team-bio">Social media strategist specializing in brand building and community engagement.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">👨‍💻</div>
+                    <h3>Michael Chen</h3>
+                    <p class="team-role">SEO & Content Lead</p>
+                    <p class="team-bio">Expert in organic search optimization and content strategy for maximum visibility.</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">👩‍🔬</div>
+                    <h3>Emma Davis</h3>
+                    <p class="team-role">Analytics Manager</p>
+                    <p class="team-bio">Data-driven professional who transforms metrics into actionable insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / News Section (replaces Pricing) -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest <span class="highlight">Blog & News</span></h2>
+            <p class="section-subtitle">Insights, case studies, and industry news from SocialStrong</p>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image blog-image-1">📰</div>
+                    <div class="blog-content">
+                        <h3>How We Scaled an E-commerce Brand to 250% Sales</h3>
+                        <p class="blog-meta">June 1, 2026 • Case Study</p>
+                        <p>Learn the strategy, channels, and creative approach that delivered rapid growth for our client.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image blog-image-2">🎥</div>
+                    <div class="blog-content">
+                        <h3>Top 5 Video Content Ideas for 2026</h3>
+                        <p class="blog-meta">May 20, 2026 • Tips</p>
+                        <p>Short-form, long-form, and repurposing tactics to increase engagement and conversions.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image blog-image-3">💡</div>
+                    <div class="blog-content">
+                        <h3>UX Design Trends That Boost Conversion Rates</h3>
+                        <p class="blog-meta">April 12, 2026 • Design</p>
+                        <p>Practical UI/UX patterns we use to lift conversion and reduce friction for users.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our <span class="highlight">Clients Say</span></h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <blockquote class="testimonial-text">SocialStrong Marketing completely transformed our business. Their strategic approach and attention to detail resulted in a 300% ROI in the first year. Highly recommended!</blockquote>
+                    <div class="testimonial-meta">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="author">
+                            <div class="author-avatar">JM</div>
+                            <div class="author-info">
+                                <div class="testimonial-author">Jessica Martinez</div>
+                                <div class="testimonial-role">CEO, Tech Innovations Inc</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-text">The team at SocialStrong is professional, responsive, and results-oriented. They understood our goals immediately and delivered beyond expectations.</blockquote>
+                    <div class="testimonial-meta">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="author">
+                            <div class="author-avatar">DW</div>
+                            <div class="author-info">
+                                <div class="testimonial-author">David Wilson</div>
+                                <div class="testimonial-role">Founder, E-Commerce Solutions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-text">Working with SocialStrong was a game-changer. Their expertise in social media marketing helped us build an engaged community of loyal customers.</blockquote>
+                    <div class="testimonial-meta">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="author">
+                            <div class="author-avatar">LA</div>
+                            <div class="author-info">
+                                <div class="testimonial-author">Lisa Anderson</div>
+                                <div class="testimonial-role">Marketing Director, Luxury Brands</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote class="testimonial-text">The results speak for themselves. We've seen unprecedented growth in our social media presence and brand recognition since partnering with SocialStrong.</blockquote>
+                    <div class="testimonial-meta">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <div class="author">
+                            <div class="author-avatar">RJ</div>
+                            <div class="author-info">
+                                <div class="testimonial-author">Robert Johnson</div>
+                                <div class="testimonial-role">Owner, Retail Empire</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="slider-btn prev" onclick="slideTestimonial(-1)">❮</button>
+                <div class="slider-dots" id="sliderDots"></div>
+                <button class="slider-btn next" onclick="slideTestimonial(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What services does SocialStrong offer?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer comprehensive digital marketing services including social media management, SEO optimization, email marketing, PPC advertising, content creation, and analytics & reporting. All services are customized to your business needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How long does it take to see results?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Results vary depending on your industry and goals. Typically, you can see initial improvements in engagement within 2-4 weeks, while significant growth in traffic and conversions usually takes 2-3 months. We provide monthly reports to track progress.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Do you work with small businesses?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! We work with businesses of all sizes, from startups to large enterprises. Our Starter plan is perfect for small businesses looking to establish their digital presence affordably.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>Can I change or cancel my plan?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! You can upgrade, downgrade, or cancel your plan anytime with 30 days notice. We believe in flexibility and want to ensure you get the best value for your investment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>What's your reporting process?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We provide detailed monthly reports including engagement metrics, traffic analytics, conversion data, and ROI analysis. Professional and Starter plans get monthly reports, while Enterprise clients get weekly updates.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>How do I get started?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Getting started is simple! Just fill out our contact form or call us. We'll schedule a free consultation to understand your goals and recommend the perfect plan for your business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Digital Marketing Tips & Trends</h2>
+                <p>Join 5,000+ businesses receiving exclusive insights and strategies every week</p>
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Enquiry Now</button>
+                </form>
+                <p class="newsletter-note">✓ We respect your privacy. Unsubscribe anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Business Avenue<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@socialstrongmarketing.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SocialStrong</h3>
+                    <p>Your trusted partner in digital marketing excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SocialStrong Marketing. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="hero-enquiry.js"></script>
+</body>
+</html>
